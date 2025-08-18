@@ -1,0 +1,18 @@
+POST http://localhost:3000/api/transactions
+Content-Type: application/json
+
+{
+  "userId": "210106",
+  "title": "rent",
+  "category": "rent payment",
+  "amount": -25000
+}
+
+###
+GET http://localhost:3000/api/transactions/12345
+
+###
+GET http://localhost:3000/api/transactions/summary/210106
+
+###
+DELETE http://localhost:3000/api/transactions/8
